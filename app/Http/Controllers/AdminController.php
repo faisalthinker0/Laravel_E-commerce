@@ -41,6 +41,24 @@ class AdminController extends Controller
             return redirect('admin');
         }
     }
+    public function create()
+    {
+        return view('admin.register');
+    }
+    public function store()
+    {
+        $this->validate(request(), [
+            'name' => 'required',
+            'email' => 'required|email',
+            'password' => 'required'
+        ]);
+
+        $user = Admin::create(request(['name', 'email', 'password']));
+
+//        auth()->login($user);
+
+        return redirect()->to('admin/register')->with('success', 'User is successfully saved');
+    }
     public function dashboard()
     {
         return view('admin.dashboard');

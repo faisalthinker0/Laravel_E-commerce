@@ -58,6 +58,7 @@
                                 </div>
                                 @endif
                             </form>
+                            <a href="admin/register" class="fa fa-registered">Register</a>
                         </div>
                     </div>
                 </div>

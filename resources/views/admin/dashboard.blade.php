@@ -1,9 +1,9 @@
-@extends('backend/layout')
+@extends('admin/layout')
 @section('page_title','Dashboard')
 @section('dashborad_select','active')
 @section('container')
 <div class="row">
-    <h1>Dashboard</h1>   
+    <h1>Dashboard</h1>
     <div class="row row-group m-0">
         <div class="col-12 col-lg-6 col-xl-3 border-light">
             <div class="card-body">
@@ -43,5 +43,5 @@
         </div>
     </div>
 </div>
- 
+
 @endsection

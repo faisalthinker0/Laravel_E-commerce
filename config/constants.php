@@ -1,4 +1,4 @@
 <?php
 return [
-    'site_name'=>'VFX PK'
+    'site_name'=>'Eccomerce'
 ];
